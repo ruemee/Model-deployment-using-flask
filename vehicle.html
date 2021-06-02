@@ -1,0 +1,26 @@
+<div class ="login">
+<h1>Predict if a client will submit a vehicle insurance claim in the next 3 months</h1>
+<h3> Enter the following</h3>
+
+<form action="{{url_for('predict')}}"method="post">
+<input type="text" name="Gender" placeholder="Gender" required="required"/>
+<input type="number" name="Age" placeholder="Age" required="required"/>
+<input type="text" name="State" placeholder="State" required="required"/>
+<input type="text" name="Subject_Car_Make" placeholder="Subject_Car_Make" required="required"/>
+<input type="text" name="LGA_Name" placeholder="LGA_Name" required="required"/>
+<input type="date" name="Policy Start Date" placeholder="Policy Start Date" required="required"/>
+<input type="date" name="Policy End Date" placeholder="Policy End Date" required="required"/>
+<input type="date" name="First Transaction Date" placeholder="First Transaction Date" required="required"/>
+<input type="number" name="No_Pol" placeholder="No_Pol" required="required"/>
+<input type="text" name="Car_Category" placeholder="Car_Category" required="required"/>
+<input type="text" name="Subject_Car_Colour" placeholder="Subject_Car_Colour" required="required"/>
+<input type="text" name="ProductName" placeholder="ProductName" required="required"/>
+
+
+
+<button type="submit" class="btn">Predict</button>
+</form>
+<br>
+<br>
+{{prediction_text}}
+</div>
